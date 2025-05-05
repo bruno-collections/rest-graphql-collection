@@ -1,0 +1,28 @@
+meta {
+  name: graphql-quey
+  type: graphql
+  seq: 1
+}
+
+post {
+  url: https://graphql-pokeapi.graphcdn.app/
+  body: graphql
+  auth: inherit
+}
+
+body:graphql {
+  query {
+    pokemon(name: "pikachu") {
+      id
+      name
+      height
+      weight
+      types {
+        type {
+          name
+        }
+      }
+    }
+  }
+  
+}

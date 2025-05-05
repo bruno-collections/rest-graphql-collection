@@ -1,0 +1,33 @@
+meta {
+  name: graphql-var-query
+  type: graphql
+  seq: 2
+}
+
+post {
+  url: https://graphql-pokeapi.graphcdn.app/
+  body: graphql
+  auth: inherit
+}
+
+body:graphql {
+  query GetPokemon($name: String!) {
+    pokemon(name: $name) {
+      id
+      name
+      height
+      weight
+      types {
+        type {
+          name
+        }
+      }
+    }
+  }
+}
+
+body:graphql:vars {
+  {
+    "name": "pikachu"
+  }
+}
