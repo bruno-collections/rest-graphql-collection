@@ -1,4 +1,4 @@
-# REST and GraphQL API request
+# REST and GraphQL API Collection
 
 - This collection is enables you to test REST and Graphql API with public endpoints provided within collection.
   - [JSON place holder - REST API](https://jsonplaceholder.typicode.com/guide/)
